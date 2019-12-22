@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6743b344-9ece-4972-9b06-4e0509c5b1ae" name="Default Changelist" comment="" />
+    <list default="true" id="6743b344-9ece-4972-9b06-4e0509c5b1ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VHQcnikSvuhOv5JoCF5VQSCTV1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -80,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576907622971</updated>
       <workItem from="1576907638900" duration="33912000" />
-      <workItem from="1576984666573" duration="190000" />
+      <workItem from="1576984666573" duration="2483000" />
     </task>
     <servers />
   </component>
@@ -96,26 +105,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="779" y="257" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576984790698" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1576984858940">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1576987692431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576984858940" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1576984858939">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576987692431" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1576987692431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576984858939" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1576984858939">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576987692431" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1576987692431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576984858939" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1576984858939">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576987692431" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1576987692431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576984858939" />
-    <state x="441" y="143" key="SettingsEditor" timestamp="1576984806982">
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576987692431" />
+    <state x="441" y="143" key="SettingsEditor" timestamp="1576987679543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="441" y="143" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576984806982" />
+    <state x="441" y="143" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576987679543" />
     <state x="647" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1576984667243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -124,6 +133,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Flask_demo$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1576908160868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Flask_demo$Flask_demo.coverage" NAME="Flask_demo Coverage Results" MODIFIED="1576980030830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Flask_Blog_App$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1576984858928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Flask_Blog_App$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1576987692423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
