@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>River's Blog</title>
+    <style>
+        body {
+            color: black;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    {# jumbotron header start #}
+    <div class="jumbotron mt-3">
+        <h1>River2056's Blog Post</h1>
+        <p class="lead">A place to Recollect, Enhance, and Improve</p>
+        <a class="btn btn-lg btn-primary" href="/posts/1" role="button">Post your thoughts! »</a>
+    </div>
+    {# jumbotron header end #}
+
+    {# timer start #}
+    <div class="card bg-light">
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+{#                <h3 id="current_time">2019-05-11 18:30:55</h3>#}
+                <h2 id="year_month_date" style="display: inline;"></h2>
+                <h2 id="hour_min_sec" style="display: inline-block; float: right;"></h2>
+            </blockquote>
+        </div>
+    </div>
+    {# timer end #}
+
+    <script>
+        function currentTime() {
+            let time = new Date();
+            let year = time.getFullYear();
+            let month = time.getMonth() + 1;
+            let day = time.getDate();
+            let hours = time.getHours();
+            let minutes = time.getMinutes();
+            let seconds = time.getSeconds();
+
+            if (month < 10) {
+                month = "0" + month;
+            }
+            if (day < 10) {
+                day = "0" + day;
+            }
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            {#let timeLine = year + "-" + month + "-" + day + " &nbsp;&nbsp;&nbsp; " + hours + ":" + minutes + ":" + seconds;#}
+            {#$('#current_time').html(timeLine);#}
+            let year_month_date = `${year}-${month}-${day}`;
+            let hour_min_sec = `${hours}:${minutes}:${seconds}`
+            $('#year_month_date').html(year_month_date);
+            $('#hour_min_sec').html(hour_min_sec);
+        }
+
+        setInterval(currentTime, 500);
+    </script>
+{% endblock %}

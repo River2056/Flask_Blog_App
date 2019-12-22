@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+    <title>Blog Posts</title>
+{% endblock %}
+
+
+{% block body %}
+    <h1 class="mt-2">Blog Posts</h1>
+
+    {# main post form start #}
+    <hr/>
+    <h2>What's on your mind? </h2>
+    <div class="form-group">
+        <form action="/do_posts" method="POST">
+            <label for="title">Title: </label>
+            <input class="form-control" type="text" placeholder="place title here" id="title" name="title"/>
+            <label for="content">Post: </label>
+            <textarea class="form-control" rows="5" cols="50" placeholder="place content here" id="content"
+                      name="content"></textarea>
+            <label for="author">By: </label>
+            <input class="form-control" type="text" placeholder="place author here" name="author" id="author"/>
+            <button class="btn btn-primary btn-block mt-2">Post</button>
+        </form>
+    </div>
+    {# main post form end #}
+
+    <hr/>
+
+    {# Pagination start #}
+    <ul class="pagination">
+        {% for i in range(size) %}
+            <li class="page-item {% if (i + 1) == current %} active {% endif %}"><a class="active page-link"
+                                                                                    href="/posts/{{ i + 1 }}">{{ i + 1 }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    {# Pagination end #}
+
+    <hr/>
+
+    {# main Posts section start #}
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2>
+        <small>Written By: {{ post.author if post.author else "N/A" }} on {{ post.date_posted }}</small>
+        <br/><br/>
+        <p>{{ post.content }}</p>
+        <a id="post{{ post.id }}" class="btn btn-danger" href="/delete/{{ post.id }}"
+           onclick="deletePost(this);">Delete</a>
+        <a id="edit{{ post.id }}" class="btn btn-success" href="/edit/{{ post.id }}">Edit</a>
+        <hr/>
+    {% endfor %}
+    {# main Posts section end #}
+{% endblock %}
