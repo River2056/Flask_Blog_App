@@ -6,3 +6,11 @@ body {
 hr {
     background-color: white;
 }
+
+textarea {
+    white-space: pre-wrap;
+}
+
+p {
+    white-space: pre-wrap;
+}

@@ -1,6 +1,6 @@
 const deletePost = element => {
-    const confirmIfDelete = confirm(`Are you sure you want to delete: ${element.id}?`);
+    const confirmIfDelete = confirm(`Are you sure you want to delete post: ${element.id}?`);
     if(confirmIfDelete) {
-        location.href = element.href;
+        element.href = `/delete/${element.id}`
     }
 };

@@ -46,7 +46,7 @@
         <small>Written By: {{ post.author if post.author else "N/A" }} on {{ post.date_posted }}</small>
         <br/><br/>
         <p>{{ post.content }}</p>
-        <a id="post{{ post.id }}" class="btn btn-danger" href="/delete/{{ post.id }}"
+        <a id="{{ post.id }}" class="btn btn-danger" href="javascript:;"
            onclick="deletePost(this);">Delete</a>
         <a id="edit{{ post.id }}" class="btn btn-success" href="/edit/{{ post.id }}">Edit</a>
         <hr/>

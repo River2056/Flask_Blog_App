@@ -4,9 +4,12 @@ from flask import request
 from flask import redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from src.dbconfig import config
 
+DB_URL = 'postgresql+psycopg2://{user}:{pw}@{url}:{port}/{db}'.format(user=config["user"], pw=config["pwd"],
+                                                               url=config["url"], port=config["port"], db=config["db"])
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL  # 'sqlite:///posts.db'
 db = SQLAlchemy(app)
 
 
